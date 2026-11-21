@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    namespace 'com.android.media'
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.android.media"
-        minSdkVersion 19
-        targetSdkVersion 29
+        minSdk 19
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
@@ -35,3 +35,6 @@ dependencies {
     implementation project(path: ':mediaproxy')
     implementation project(path: ':base')
 }
+
+
+

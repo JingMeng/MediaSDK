@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.media">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -17,7 +16,7 @@
         android:supportsRtl="true">
         <activity android:name=".MainActivity"
             android:windowSoftInputMode="adjustUnspecified|stateHidden"
-            android:configChanges="orientation|keyboardHidden">
+            android:configChanges="orientation|keyboardHidden" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,21 +26,21 @@
 
         <activity android:name=".PlayFeatureActivity"
             android:windowSoftInputMode="adjustUnspecified|stateHidden"
-            android:configChanges="orientation|keyboardHidden"/>
+            android:configChanges="orientation|keyboardHidden"/ android:exported="true">
 
-        <activity android:name=".DownloadFeatureActivity" />
+        <activity android:name=".DownloadFeatureActivity" / android:exported="true">
 
-        <activity android:name=".DownloadSettingsActivity" />
+        <activity android:name=".DownloadSettingsActivity" / android:exported="true">
 
-        <activity android:name=".DownloadBaseListActivity" />
+        <activity android:name=".DownloadBaseListActivity" / android:exported="true">
 
-        <activity android:name=".DownloadOrcodeActivity" />
+        <activity android:name=".DownloadOrcodeActivity" / android:exported="true">
 
-        <activity android:name=".MediaScannerActivity" />
+        <activity android:name=".MediaScannerActivity" / android:exported="true">
         
-        <activity android:name=".PlayerActivity" />
+        <activity android:name=".PlayerActivity" / android:exported="true">
 
-        <activity android:name=".DownloadPlayActivity" />
+        <activity android:name=".DownloadPlayActivity" / android:exported="true">
     </application>
 
 </manifest>

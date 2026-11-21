@@ -1,13 +1,13 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.2"
+    namespace 'com.android.mediaproxylib'
+    compileSdk 34
 
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 28
+        minSdk 19
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
@@ -33,3 +33,4 @@ dependencies {
     implementation project(path: ':base')
     implementation project(path: ':androidasync')
 }
+
